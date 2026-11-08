@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Стопка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://st.max.ru/js/max-web-app.js"></script>
+</head>
+<body>
+<div class="app" id="app">
+
+  
+  <nav class="menu" id="menu" aria-label="Меню" hidden>
+    <div class="menu__logo">
+      <span class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="10" rx="2"/><path d="M4 16h16"/><path d="M5 20h14"/></svg>
+      </span>
+      <span>Стопка</span>
+    </div>
+    <div class="menu__items" id="menuItems"></div>
+  </nav>
+
+  <main class="screens">
+    <p class="demo-note" id="demoNote" hidden>Демо-режим: данные ненастоящие, сервер не подключён</p>
+    
+    <div id="view" class="screen" aria-live="polite"></div>
+  </main>
+</div>
+
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+
+<script src="js/config.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/student.js"></script>
+<script src="js/teacher.js"></script>
+<script src="js/duel.js"></script>
+<script>start();</script>
+</body>
+</html>
